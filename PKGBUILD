@@ -12,19 +12,20 @@ _url="https://github.com/MMcQueenGNU"
 license=('CC-BY-SA')
 source=("$_url/$pkgname/archive/refs/tags/v$pkgver.tar.gz")
 
-sha256sums=('10edf5e360457fbc7ecf1d250974f4bbfb8b00c6d7e64e52ace802d010333f17')
+sha256sums=('af0092305cf3d1f07b9065706e3e5126dea0cd3c3e99a9d4f6b280d8d8394f75')
 
 build() {
 	true
 }
 
 package() {
-	cd $srcdir/$pkgname
+	
 	mkdir -p $pkgdir/usr/share/plank/themes/$_pkgname
 	mkdir -p $pkgdir/usr/share/plank/themes/$_pkgname2
 	mkdir -p $pkgdir/usr/share/plank/themes/$_pkgname3
-	install -m 755 dock.theme $pkgdir/$_pkgname/usr/share/plank/themes/$_pkgname/
-	install -m 755 dock.theme $pkgdir/$_pkgname2/usr/share/plank/themes/$_pkgname2/
-	install -m 755 dock.theme $pkgdir/$_pkgname3/usr/share/plank/themes/$_pkgname3/
-}
-
+	cd "$srcdir/$pkgname-$pkgver/$_pkgname"
+	install -m 755 dock.theme $pkgdir/usr/share/plank/themes/$_pkgname/
+	cd "$srcdir/$pkgname-$pkgver/$_pkgname2"
+	install -m 755 dock.theme $pkgdir/usr/share/plank/themes/$_pkgname2/
+	cd "$srcdir/$pkgname-$pkgver/$_pkgname3"	
+	install -m 755 dock.theme $pkgdir/usr/share/plank/themes/$_pkgname3/
