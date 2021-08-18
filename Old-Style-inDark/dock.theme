@@ -1,0 +1,33 @@
+#Old Style - Platinum Series
+#Created by PT_Alfred on December 2019
+#@PTAlfred@mastodon.art
+
+[PlankDrawingTheme]
+TopRoundness=32
+BottomRoundness=3
+LineWidth=1
+OuterStrokeColor=255;;255;;255;;100
+FillStartColor=041;;041;;041;;200
+FillEndColor=007;;007;;007;;220
+InnerStrokeColor=0;;0;;0;;127
+
+[PlankDrawingDockTheme]
+HorizPadding=7
+TopPadding=-6
+BottomPadding=1.5
+ItemPadding=3
+IndicatorSize=7
+UrgentBounceHeight=1.6666666666666667
+LaunchBounceHeight=0.625
+FadeOpacity=1
+ClickTime=300
+UrgentBounceTime=600
+LaunchBounceTime=600
+ActiveTime=300
+SlideTime=1750
+FadeTime=250
+HideTime=1055
+GlowSize=30
+GlowTime=10000
+GlowPulseTime=2000
+UrgentHueShift=150
